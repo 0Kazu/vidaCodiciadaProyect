@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Velocidad del personaje")]
-    public float speed;
+    public float speed = 5f;
 
     [Header("Dependencias")]
     private Vector2 _vectorMovement;
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_rb != null)
         {
-            _rb.velocity = speed * _vectorMovement;
+            _rb.velocity = _vectorMovement * speed;
         }
     }
 
