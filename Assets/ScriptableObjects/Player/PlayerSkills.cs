@@ -4,5 +4,5 @@ using UnityEngine;
 public class PlayerSkills : ScriptableObject
 {
     [Header("Player Skills")]
-    public string[] Skills;
+    public string[] skills;
 }

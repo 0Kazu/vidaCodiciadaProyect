@@ -12,7 +12,7 @@ public class ParticualSkill : ScriptableObject
     public float aumentoDeVelocidad;
 
     public bool puedeAumentarResistencia;
-    [ShowIf("puedeAumentarVelocidad")]
+    [ShowIf("puedeAumentarResistencia")]
     public float aumentoDeResistencia;
     
 }

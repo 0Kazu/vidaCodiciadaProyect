@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: SpeedSkill
   m_EditorClassIdentifier: 
   nombreDeHabilidad: Huyendo de un negro
-  puedeAumentarVelocidad: 1
+  puedeAumentarVelocidad: 0
   aumentoDeVelocidad: 2
+  puedeAumentarResistencia: 0
+  aumentoDeResistencia: 0
