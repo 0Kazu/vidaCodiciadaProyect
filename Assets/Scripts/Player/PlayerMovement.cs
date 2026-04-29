@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
 
     [Header("Dependencias")]
-    private Vector2 _vectorMovement;
     private Rigidbody2D _rb;
+    public Vector2 _vectorMovement { get; private set; }
+    
 
     void Awake()
     {
@@ -27,6 +28,5 @@ public class PlayerMovement : MonoBehaviour
     public void OnPlayerMovement(InputAction.CallbackContext vector2Dvalue)
     {
         _vectorMovement = vector2Dvalue.ReadValue<Vector2>();
-        Debug.Log("Input found");
     }
 }
